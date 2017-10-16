@@ -1,0 +1,7 @@
+﻿<div [ngClass]="'paging-box-wrapper'" [style.display]="isUsersPanelVisible ? 'inline-block' : 'none'">
+    <div [ngClass]="'paging-box'">
+        <button [ngClass]="'paging-box-button'" (click)="goLeft()"> left </button>
+        <div [ngClass]="'paging-box-page-display'">page: {{currentPage}}</div>
+        <button [ngClass]="'paging-box-button'" (click)="goRight()"> right </button>
+    </div>
+</div>

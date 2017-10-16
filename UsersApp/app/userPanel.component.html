@@ -1,0 +1,25 @@
+﻿<div [style.display]="isUsersPanelVisible ? 'inline-block' : 'none'">
+    <div [ngClass]="'users-panel'">
+        <div [ngClass]="'user-card'" *ngFor="let u of users" (click)="onSelect(u)">
+            <div [ngClass]="'user-card-text-data'">
+                <table>
+                    <tr>
+                        <td>First name: </td>
+                        <td>{{u.FirstName}}</td>
+                    </tr>
+                    <tr>
+                        <td>Last name: </td>
+                        <td>{{u.LastName}}</td>
+                    </tr>
+                    <tr>
+                        <td>Job: </td>
+                        <td>{{u.Job}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div [ngClass]="'user-card-image-wrapper'">
+                <img src="{{u.ImagePath}}"/>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,3 @@
+﻿<user-panel [users]="users" [isUsersPanelVisible]="isUsersPanelVisible" (onSelected)="onSelected($event)">Loading...</user-panel>
+<user-details [user]="selectedUser" [isUsersPanelVisible]="isUsersPanelVisible" (goBackClicked)="goBackClicked($event)"></user-details>
+<paging [usersTotal]="usersTotal" [isUsersPanelVisible]="isUsersPanelVisible" (requestUsers)="requestUsers($event)"></paging>

@@ -1,0 +1,46 @@
+﻿<div [style.display]="isUsersPanelVisible ? 'none' : 'inline-block'">
+    <div [ngClass]="'user-details-panel'">
+	    <button (click)="goBackClick()">Go Back</button>
+	    <div user-details-table>
+            <div [ngClass]="'user-card-text-data'">
+                <table>
+                    <tr>
+                        <td>First name: </td>
+                        <td>{{user.FirstName}}</td>
+                    </tr>
+                    <tr>
+                        <td>Last name: </td>
+                        <td>{{user.LastName}}</td>
+                    </tr>
+                    <tr>
+                        <td>Job: </td>
+                        <td>{{user.Job}}</td>
+                    </tr>                    
+                    <tr>
+                        <td>Department: </td>
+                        <td>{{user.Department}}</td>
+                    </tr>
+                    <tr>
+                        <td>Birthday: </td>
+                        <td>{{user.Birthday}}</td>
+                    </tr>
+                    <tr>
+                        <td>Work phone: </td>
+                        <td>{{user.WorkPhone}}</td>
+                    </tr>
+                    <tr>
+                        <td>Private phone: </td>
+                        <td>{{user.PrivatePhone}}</td>
+                    </tr>
+                    <tr>
+                        <td>User info: </td>
+                        <td>{{user.UserInfo}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div [ngClass]="'user-card-image-wrapper'">
+                <img src="{{user.ImagePath}}" />
+            </div>		    
+	    </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+﻿.user-card {
+    display: inline-block;
+    width: 45%;
+    float: left;
+    border: 1px solid #CACACA;
+    margin: 5px 5px 5px 5px;
+    background-color: lightgoldenrodyellow;
+    cursor: pointer;
+}
+
+.user-card-text-data {
+    display: inline-block;
+    float: left;
+}
+
+.user-card-image-wrapper {
+    display: inline-block;
+    float: right;
+}
+
+.user-card-image-wrapper img{
+    width: 100px;
+}
+
+.paging-box {
+    display: inline-block;
+    margin: auto;
+    height: 45px;
+    border: 1px solid lightgray;
+    text-align: center;
+    padding-top: 7px;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+.paging-box-page-display{
+    float: left;
+}
+
+.paging-box-button{
+    float: left;
+}
+
+.paging-box-wrapper {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+.user-details-panel {
+    background-color: lightgoldenrodyellow;
+    border: 1px solid lightgrey;
+    display: inline-block;
+}
